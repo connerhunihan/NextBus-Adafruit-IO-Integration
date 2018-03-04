@@ -20,7 +20,7 @@ def nextArrival():
     # return the minutes until the next bus arrives
     NextBus = NextBusAPI()
     results = NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )[0]
-    minutesUntilArrival = results['West Oakland BART'][0]
+    minutesUntilArrival = results["West Oakland BART"][0]
     return (minutesUntilArrival)
 
 # Define callback functions which will be called when certain events happen.
