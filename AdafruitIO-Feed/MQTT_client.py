@@ -19,9 +19,16 @@ ADAFRUIT_IO_USERNAME = 'connerhunihan'  # See https://accounts.adafruit.com
 def nextArrival():
     # return the minutes until the next bus arrives
     NextBus = NextBusAPI()
-    results = NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )[0]
-    minutesUntilArrival = results["West Oakland BART"][0]
+    
+    # 40 LINE
+    results = NextBus.BartRoutesResponse(stopInput = "14th Av & E 15th St", routeInput = "40", directionInput = "Eastmont Transit Ctr" )[0]
+    minutesUntilArrival = results['Eastmont Transit Ctr'][0]
     return (minutesUntilArrival)
+
+    # 14 LINE
+    # results = NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )[0]
+    # minutesUntilArrival = results['West Oakland BART'][0]
+    # return (minutesUntilArrival)
 
 # Define callback functions which will be called when certain events happen.
 def connected(client):

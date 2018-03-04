@@ -81,16 +81,15 @@ void loop() {
       Serial.print((char *)nextbus.lastread);
       Serial.println(F(" minutes"));
       int minutes = atoi((char *)nextbus.lastread);
-      Serial.println(minutes);
-      
-//      if (strcmp((char *)nextbus.lastread, "15") > 0) {
-//        digitalWrite(LED_PIN, HIGH); 
-//        Serial.println("Less than 15 minutes");
-//      }
-//      if (strcmp((char *)nextbus.lastread, "15") < 0) {
-//        digitalWrite(LED_PIN, LOW); 
-//        Serial.println("More than 15 minutes");
-//      }
+     
+      if (minutes < 15) {
+        digitalWrite(LED_PIN, HIGH); 
+        Serial.println("Less than 15 minutes");
+      }
+      if (minutes > 15) {
+        digitalWrite(LED_PIN, LOW); 
+        Serial.println("More than 15 minutes");
+      }
     }
   }
 

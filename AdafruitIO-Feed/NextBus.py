@@ -106,7 +106,7 @@ class NextBusAPI(object):
         return busDepartureTimes
 
 
-    def BartRoutesResponse(self, routeInput, stopInput, directionInput = None):
+    def BartRoutesResponse(self, routeInput, stopInput, directionInput):
         """
         Takes stop, route, and optionally direction as input.
         Returns a dictionary with destinations as keys and a list of upcoming departure times as values.
@@ -247,7 +247,8 @@ if __name__ == '__main__':
     """
 
     #Test: BARTRoutesResponse
-    # NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )
+    NextBus = NextBusAPI()
+    NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )
     # NextBus.BartRoutesResponse(stopInput = "East 18th St & 12th Av", routeInput = "14")
     # NextBus.BartRoutesResponse(stopInput = " telegraph 40th", routeInput = "57", directionInput = 'Foothill Square')
     # NextBus.BartRoutesResponse(stopInput = "dana and durant", routeInput = "6")
