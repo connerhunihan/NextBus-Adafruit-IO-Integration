@@ -9,5 +9,7 @@ https://github.com/adafruit/io-client-python
 Deployed at https://arcane-temple-62084.herokuapp.com/
 
 ## Acknowledgments
-Special thanks to the group that put together the Python client for use with io.adafruit.com
+Thank you to 5un, dylan-fox, redspruce, and anupandey (https://github.com/5un, https://github.com/dylan-fox, https://github.com/redspruce, https://github.com/anupandey) for your work creating an easy-to-use Python NextBusAPI.
+
+Also, a special thanks to the group that put together the Python client for use with io.adafruit.com
 https://github.com/adafruit/io-client-python
