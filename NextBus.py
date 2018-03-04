@@ -247,8 +247,8 @@ if __name__ == '__main__':
     """
 
     #Test: BARTRoutesResponse
-    NextBus = NextBusAPI()
-    NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )
+    # NextBus = NextBusAPI()
+    # NextBus.BartRoutesResponse(stopInput = "E 18th St & 12th Av", routeInput = "14", directionInput = "West Oakland BART" )
     # NextBus.BartRoutesResponse(stopInput = "East 18th St & 12th Av", routeInput = "14")
     # NextBus.BartRoutesResponse(stopInput = " telegraph 40th", routeInput = "57", directionInput = 'Foothill Square')
     # NextBus.BartRoutesResponse(stopInput = "dana and durant", routeInput = "6")
