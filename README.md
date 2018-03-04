@@ -11,6 +11,3 @@ Deployed at https://arcane-temple-62084.herokuapp.com/
 ## Acknowledgments
 Special thanks to the group that put together the Python client for use with io.adafruit.com
 https://github.com/adafruit/io-client-python
-
-Also, speical thanks to Ladyada for putting together the MQTT Library.
-https://github.com/adafruit/Adafruit_MQTT_Library
